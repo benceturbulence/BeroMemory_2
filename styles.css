@@ -101,10 +101,12 @@ h1, h2 {
   margin: 2rem 0;
 }
 
-
+.disable {
+  display: none;
+}
 
 .wonState {
-  display: none;
+  display: flex;
   margin: auto;
   position: absolute;
   top: 10rem;
@@ -150,4 +152,3 @@ h1, h2 {
   padding-bottom: 1rem;
   text-align: center;
 }
-

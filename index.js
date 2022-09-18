@@ -29,7 +29,7 @@ function shuffle(array) {
 const shuffled = cardImgArray.sort(() => 0.5 - Math.random());
 
 // Get sub-array of first n elements after shuffled
-let selected = shuffled.slice(0, 20);
+let selected = shuffled.slice(0, 16);
 
 
 
@@ -99,7 +99,8 @@ function isFinished(){
 
     if (cardsFoundArray.length === cardImgArrayDoubled.length/2){
         console.log("Yes finished")
-        document.getElementById("resultDisplay").style.display="flex"
+        document.getElementById("resultDisplay").classList.add("wonState")
+        document.getElementById("resultDisplay").classList.remove("disable")
         document.getElementById("memory-game").style.display="none"
     }
     else {
