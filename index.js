@@ -99,7 +99,7 @@ function isFinished(){
 
     if (cardsFoundArray.length === cardImgArrayDoubled.length/2){
         console.log("Yes finished")
-        document.getElementById("resultDisplay").classList.add("wonState")
+        document.getElementById("resultDisplay").style.display="flex"
         document.getElementById("memory-game").style.display="none"
     }
     else {
