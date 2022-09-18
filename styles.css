@@ -1,0 +1,122 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.memory-game {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.memory-card {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.back-face, .front-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.back-face {
+  background-position: center;
+  background-size: cover;
+}
+
+.front-face {
+  z-index: 999;
+}
+
+.chosen .front-face{
+  z-index: -1;
+}
+
+.found .front-face {
+  z-index: -1;
+}
+
+
+
+/* Display */
+
+
+
+
+#resultDisplay{
+  max-width: 600px;
+  margin: 0 auto;
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+  justify-content: center;
+  display: none
+}
+
+
+
+#resultDisplay .baloon {
+  max-width: 60px;
+}
+
+
+h1, h2 {
+  color: goldenrod;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.baloon {
+  position:relative;
+  -webkit-animation:glide 2s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes glide  {
+  from {
+     left:0px;
+     top:0px;
+  }
+  
+  to {
+     left:0px;
+     top:40px;
+  }
+
+}
+
+#resultDisplay h1 {
+  text-align: center;
+}
+
+.header {
+  margin: 2rem 0;
+}
+
+
+
+.wonState {
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 5rem;
+  z-index: 999;
+  background-color: black;
+}
