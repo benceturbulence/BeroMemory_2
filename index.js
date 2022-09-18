@@ -38,7 +38,7 @@ let cardImgArrayDoubled = shuffle([...selected, ...selected])
 function createBoard(){
     let cardArray=cardImgArrayDoubled.map( e => {
         return `<div class="memory-card" data-id="${e}">
-                <div class="front-face" style="background-color: yellow"></div>
+                <div class="front-face"></div>
                 <div class="back-face" style="background-image: url('img/${e}.jpg')"></div>
             </div>`
     }).join("")

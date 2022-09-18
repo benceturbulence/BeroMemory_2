@@ -5,11 +5,14 @@
   padding: 0;
 }
 
-
+body {
+  font-family: 'Arizonia', cursive;
+}
 
 .container {
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
+  padding-bottom: 5rem;
 }
 
 
@@ -23,8 +26,8 @@
 }
 
 .memory-card {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
@@ -44,6 +47,9 @@
 
 .front-face {
   z-index: 999;
+  background: rgb(255,255,255);
+  border: 1px solid #daa520;
+  border-radius: 10px;
 }
 
 .chosen .front-face{
@@ -58,30 +64,18 @@
 
 /* Display */
 
-
-
-
-#resultDisplay{
-  max-width: 600px;
-  margin: 0 auto;
-  align-items: center;
-  gap: .5rem;
-  display: flex;
-  justify-content: center;
-  display: none
-}
-
-
-
 #resultDisplay .baloon {
   max-width: 60px;
+  display: block;
 }
 
+h1 {
+  font-size: 1rem;
+}
 
 h1, h2 {
   color: goldenrod;
   text-align: center;
-  font-size: 2rem;
 }
 
 .baloon {
@@ -102,9 +96,6 @@ h1, h2 {
 
 }
 
-#resultDisplay h1 {
-  text-align: center;
-}
 
 .header {
   margin: 2rem 0;
@@ -113,10 +104,49 @@ h1, h2 {
 
 
 .wonState {
-  display: block;
+  display: none;
   margin: auto;
   position: absolute;
-  top: 5rem;
+  top: 10rem;
   z-index: 999;
-  background-color: black;
+  left: 10%;
+  background-color: rgba(245, 245, 245, .9);
+  padding: 3rem .3rem;
+  border: 1px solid #daa520;
+  border-radius: 10px;
+  align-items: center;
+  gap: .5rem;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  gap: .5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.wonState h2 {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.4rem;
+}
+
+.textcont {
+  padding: 5rem ;
+}
+
+
+.textcont p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
 }
